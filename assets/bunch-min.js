@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".pagenav li.internal a").click(function(){var a=$(this).attr("class");return $(this).closest("li").addClass("active"),$(this).closest("li").siblings().removeClass("active"),$(this).closest(".bunch").find(".area").each(function(){$(this).hasClass(a)?$(this).removeClass("hid"):$(this).addClass("hid")}),!1})});

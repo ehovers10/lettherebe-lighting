@@ -1,0 +1,27 @@
+  <h2>{{ sect.id }}</h2>
+  {% for question in sect.elements %}
+  <div id="{{ sect[0] | append: '-grp' }}">
+  <label for="{{ question.id }}">{{ question.name }}</label>
+  {% case question.type %}
+    {% when "select" %}
+  <select id="{{ question.id}}" name="{{ question.id }}" multiple="multiple" size="4">
+    {% for op in question.details.options %}
+    <option value="{{ op[0] }}">{{ op[1] }}</option>
+    {% endfor %}
+  </select>
+    {% when "slider" %}
+  <input type="range" name="{{ question.id }}" id="{{ question.id }}" value="{{ question.details.default }}" min="{{ question.details.min }}" max="{{ question.details.max }}" />
+    {% when "radio" %}
+  <fieldset>
+      {% for op in question.details.options %}
+  <label for="{{ op[0] }}">{{ op[1] }}</label>
+  <input type="radio" id="{{ op[0] }}" name="{{ question.id }}" />
+      {% endfor %}
+  </fieldset>
+    {% when "text" %}
+  <input type="text" id="{{ op[0] }}" name="{{ question.id }}" />
+    {% else %}
+  <input type="textarea" id="{{ op[0] }}" name="{{ question.id }}" />
+  {% endcase %}
+  </div>
+  {% endfor %}

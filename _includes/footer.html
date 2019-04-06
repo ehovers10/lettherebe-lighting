@@ -1,0 +1,59 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <span>{{ site.title }}</span>
+        <ul class="social-media-list">
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <span class="icon">{% include icons.html thing="email" %}</span>
+
+              <span class="username">{{ site.email }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="icon">{% include icons.html thing="github" %}</span>
+
+              <span class="username">{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="icon">{% include icons.html thing="twitter" %}</span>
+
+              <span class="username">{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.copy %}
+          <li>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+              <span class="icon">{% include icons.html thing="cc" %}</span>
+              <span class="icon">{% include icons.html thing="cca" %}</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+<div class="footer-col  footer-col-2"></div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

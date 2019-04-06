@@ -1,0 +1,72 @@
+- name: Let the be light!
+  made: 2
+  sold: 0
+  price: 250
+  description: 
+    Why is there something rather than nothing? Perhaps we owe our existence, as well as 
+    that of the entire cosmos, to the creative act of a super-powerful being or two. Or 
+    maybe what we take to be our universe is just one among innumerable others.
+    This lamp represents the epistemic position of humanity, existing upon a small globe 
+    in the midst of the vast cosmos, the origin of which is hidden from us. To reach 
+    outside of that box and see what it all rests upon is the ultimate metaphysical yen.
+  parts:
+    - piece: 4in wood oval base
+      quantity: 1
+      cost: 6.98
+    - piece: 1/2in floor flange
+      quantity: 1
+      cost: 4.63
+    - piece: 1/2in black pipe close
+      quantity: 1
+      cost: 0.98
+    - piece: 1/2in-3/8in black pipe coupling
+      quantity: 1
+      cost: 1.96
+    - piece: 3/8in black pipe tee
+      quantity: 2
+      cost: 1.78
+    - piece: 3/8in black pipe elbow
+      quantity: 2
+      cost: 2.12
+    - piece: 3/8in black pipe coupling
+      quantity: 1
+      cost: 2.12
+    - piece: 3/8in black pipe 4in nipple
+      quantity: 1
+      cost: 3.11
+    - piece: 3/8in black pipe 3in nipple
+      quantity: 3
+      cost: 1.88
+    - piece: 3/8in lack pipe 3in nipple
+      quantity: 2
+      cost: 1.60
+    - piece: 3/8in black pipe close
+      quantity: 1
+      cost: 1.60
+    - piece: 3/8in OD-3/8in FIP brass coupling
+      quantity: 2
+      cost: 5.42
+    - piece: 3/8in MIP-1/8in FIP brass coupling
+      quantity: 1
+      cost: 4.52
+    - piece: 1/8in brass close
+      quantity: 1
+      cost: 0.50
+    - piece: pull switch light socket
+      quantity: 1
+      cost: 6.50
+    - piece: 3/8in copper tubing 
+      quantity: 1
+      cost: 1.30
+    - piece: 1/4in copper tubing
+      quantity: 1
+      cost: 1.00
+    - piece: 2in duct strap
+      quantity: 2
+      cost: 0.98
+    - piece: 5in duct strap
+      quantity: 1
+      cost: 1.50
+    - piece: 3in-6in jelly jar bulb globe
+      quantity: 1
+      cost: 4.97

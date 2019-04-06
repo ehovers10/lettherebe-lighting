@@ -1,0 +1,32 @@
+title: Let there be light!
+description:
+  Philosophy-inspired lamps, built by Erik.
+
+baseurl: ""
+url: "http://erikhoversten.org/lettherebe"
+assets: #"/images"
+
+email: ehovers10@gmail.com
+github_username:  ehovers10
+
+markdown: kramdown
+
+collections:
+  models:
+    output: true
+    render: true
+  metrics:
+    output: true
+    render: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "models"
+    values:
+      layout: "page"
+
+exclude: [landing.html]
+
+sass:
+  style: compressed

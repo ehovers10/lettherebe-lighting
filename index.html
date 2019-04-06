@@ -1,0 +1,21 @@
+---
+layout: default
+title: Let There Be Lighting
+date: 2016-09-08
+---
+
+<div class="bunch">
+
+<ul class="pagenav">
+  {% for lamp in site.models %}
+  <li class="internal"><a href="#" class="{{ lamp.title | slugify }}">{{ lamp.title | capitalize }}</a></li>
+  {% endfor %}
+</ul>
+
+{% for lamp in site.models %}
+<div class="area {{ lamp.title | slugify }}{% unless forloop.first %} hid{% endunless %}">
+  {{ lamp.output }}
+</div>
+{% endfor %}
+
+</div>

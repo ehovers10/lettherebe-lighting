@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1, user-scalable=no">
+
+  <!-- grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. -->
+  <script>
+  window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+  grunticon( [ "{{ 'icons.data.png.css' | prepend: 'http://mountaincompost.com/css/' }}","{{ 'icons.data.svg.css' | prepend: 'http://mountaincompost.com/css/' }}","{{ 'icons.fallback.css' | prepend: 'http://mountaincompost.com/css/' }}"] );
+  </script>
+  <noscript><link href="{{ 'icons.fallback.css' | prepend: 'http://mountaincompost.com/css/' }}" rel="stylesheet"></noscript>
+  <style>
+    body {
+      font-family: Helvetica;
+      margin:0;
+    }
+
+    .header {
+      width:100%;
+      margin:0;
+      background:#555;
+      color:#fff;
+      text-align:center;
+      line-height:1.5;
+      padding:15px 0;
+    }
+    .full {
+      margin: 0;
+    }
+    .wrap {
+      margin: auto;
+    }
+    a {
+      color:#0a74db;
+      font-weight:600;
+    }
+    table {
+      max-width: 550px;
+      text-align: left;
+      // border-collapse: collapse;
+    }
+    th {
+      padding: 2px;
+      background: #555;
+      color: #fff;
+    }
+    td {
+      // border: 1px solid #000;
+      padding: 3px 10px;
+    }
+    ul {
+      padding: 3px 0;
+    }
+    ul li {
+      text-align: left;
+      list-style-type: none;
+      display: inline-block;
+      padding-right: 2em;
+    }
+    @media all and (max-width: 1209px) {
+      .wrap{
+        width:100%;
+      }
+      .odd {
+        clear: both;
+      }
+      .even {
+        clear: both;
+      }
+    }
+    @media all and (min-width: 1210px) {
+      .wrap {
+        width: 1210px;
+      }
+      .odd {
+        float: left;
+      }
+      .even {
+        float: right;
+      }
+    }
+    h2 {
+      color: #555;
+      padding: 3px 0;
+    }
+  </style>
+  <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+</head>
+
+<body>
+
+{{ content }}
+
+</body>
+</html>
