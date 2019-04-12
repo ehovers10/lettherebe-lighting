@@ -86,3 +86,23 @@
     color: #000000;
   }
 }
+
+.banner-nav {
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px;
+      background: #c3c3c3;
+
+      &:hover {
+        color: #ffffff;
+        background: #3c3c3c;
+      }
+    }
+  }
+}

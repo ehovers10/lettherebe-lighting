@@ -2,6 +2,7 @@
   elements:
   - id: comp
     name: Composition
+    description: Of what material should the body be composed?
     type: radio
     details:
       options:
@@ -9,7 +10,8 @@
         copper: Mostly copper
         both: About the same amount of black pipe and copper
   - id: size
-    name: Amount of material, in linear inches
+    name: Size
+    description: About how much material should the lamp use, in linear inches?
     type: slider
     details:
       min: 24
@@ -19,37 +21,28 @@
   elements:
   - id: style
     name: Style
+    description: What style shade should cover the bulb?
     type: radio
     details:
       options: 
         glass-o: Opaque glass
         glass-c: Clear glass
-        metal: Metal
+        metal-a: Metal
         cage: Cage
   - id: fixture
     name: Mode of fixture to body
+    description: How should the shade be fixed to the body?
     type: radio
     details:
       options:
         seated: Seated (as in Gauss)
         clamp-s: Simple clamp (as in Hume)
         clamp-c: Clamp with copper spindle (as in Archimedes)
-- id: switch
-  elements:
-  - id: style
-    name: Style
-    type: radio
-    details:
-      options:
-        pull: Pull cord
-        rotary: Rotary
-        dimmer-s: Simple dimmer
-        dimmer-c: Gate dimmer
-        touch: Touch
 - id: filigree
   elements:
   - id: filigree
     name: Baroque elements
+    description: Do you want any Baroque elements added to the body design?
     type: select
     details:
       options:
@@ -60,16 +53,29 @@
   elements:
   - id: style
     name: Style
+    description: What kind of base would you prefer?
     type: radio
     details: 
       style: flip
       options:
         wood: Wood
         metal: Metal
-- id: cord
+- id: wiring
   elements:
-  - id: color
-    name: Color
+  - id: switch
+    name: switch
+    description: What style switch should the lamp use?
+    type: radio
+    details:
+      options:
+        pull: Pull cord
+        rotary: Rotary
+        dimmer-s: Simple dimmer
+        dimmer-c: Gate dimmer
+        touch: Touch
+  - id: cord
+    name: cord
+    description: What color cord should be used?
     type: radio
     details:
       options:
@@ -77,18 +83,3 @@
         brown: Brown
         white: White
         gold: Gold
-- id: contact
-  elements:
-  - id: name
-    name: Name
-    type: text
-  - id: email
-    name: Email
-    type: text
-  - id: phone
-    name: Phone
-    type: text
-  - id: notes
-    name: Notes
-    type: textarea
-      

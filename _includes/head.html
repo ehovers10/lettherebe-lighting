@@ -6,14 +6,21 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="icon" href="{{ 'light-bulb.ico' | prepend: '/images/' | prepend: site.assets }}">
-
-  <link rel="stylesheet" href="{{ 'main.css' | prepend: '/css/' | prepend: site.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+{% assign style = "main.css" | prepend: "/css/" %}
+{% assign bunch = "bunch.js" | prepend: "/js/" %}
+{% if site.status == "production" %}
+  {% assign style = style | prepend: site.url %}
+  {% assign bunch = bunch | prepend: site.url %}
+{% endif %}
+  <link rel="stylesheet" href="{{ style }}">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 
-  <!--<script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>-->
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script src="{{ 'bunch-min.js' | prepend: '/js/' | prepend: site.url }}"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+{% if page.mobile == 1 %}
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+{% endif %}
+  <script src="{{ bunch }}"></script>
 </head>

@@ -1,4 +1,4 @@
-- name: Let the be light!
+- name: Kant
   made: 2
   sold: 0
   price: 250
@@ -9,64 +9,32 @@
     This lamp represents the epistemic position of humanity, existing upon a small globe 
     in the midst of the vast cosmos, the origin of which is hidden from us. To reach 
     outside of that box and see what it all rests upon is the ultimate metaphysical yen.
-  parts:
-    - piece: 4in wood oval base
-      quantity: 1
-      cost: 6.98
-    - piece: 1/2in floor flange
-      quantity: 1
-      cost: 4.63
-    - piece: 1/2in black pipe close
-      quantity: 1
-      cost: 0.98
-    - piece: 1/2in-3/8in black pipe coupling
-      quantity: 1
-      cost: 1.96
-    - piece: 3/8in black pipe tee
-      quantity: 2
-      cost: 1.78
-    - piece: 3/8in black pipe elbow
-      quantity: 2
-      cost: 2.12
-    - piece: 3/8in black pipe coupling
-      quantity: 1
-      cost: 2.12
-    - piece: 3/8in black pipe 4in nipple
-      quantity: 1
-      cost: 3.11
-    - piece: 3/8in black pipe 3in nipple
-      quantity: 3
-      cost: 1.88
-    - piece: 3/8in lack pipe 3in nipple
-      quantity: 2
-      cost: 1.60
-    - piece: 3/8in black pipe close
-      quantity: 1
-      cost: 1.60
-    - piece: 3/8in OD-3/8in FIP brass coupling
-      quantity: 2
-      cost: 5.42
-    - piece: 3/8in MIP-1/8in FIP brass coupling
-      quantity: 1
-      cost: 4.52
-    - piece: 1/8in brass close
-      quantity: 1
-      cost: 0.50
-    - piece: pull switch light socket
-      quantity: 1
-      cost: 6.50
-    - piece: 3/8in copper tubing 
-      quantity: 1
-      cost: 1.30
-    - piece: 1/4in copper tubing
-      quantity: 1
-      cost: 1.00
-    - piece: 2in duct strap
-      quantity: 2
-      cost: 0.98
-    - piece: 5in duct strap
-      quantity: 1
-      cost: 1.50
-    - piece: 3in-6in jelly jar bulb globe
-      quantity: 1
-      cost: 4.97
+  image: kant2-300.jpg
+- name: Hume
+  made: 1
+  sold: 0
+  price: 250
+  description:
+    Is it possible to form an idea of something of which you have had no experience whatsoever? As an empiricist, David Hume thought that all ideas have their ultimate origin in experience. But he acknowledged that perhaps one could form an idea of a particular shade of blue that one has never seen by extrapolating it from experience of other shades that resemble it. Is this a genuinely creative act of the mind? This lamp mimics Hume's missing shade of blue. An idea emerges from a concrete structure, but it is apparently suspended by its own power.
+  image: hume.jpg
+- name: Gauss
+  made: 1
+  sold: 0
+  price: 250
+  description:
+    The world is flux.
+  image: gauss1.jpeg
+- name: Archimedes
+  made: 1
+  sold: 0
+  price: 250
+  description: 
+    Eureka! The best ideas have a penchant of arising spontaneously when you least expect them. It is said that Archimedes discovered the relation of displaced water to the volume of an object floating in it while taking a bath. Another of Archimedes' water-related ideas was a way of trasporting it uphill by means of a spiral structure. We call his subsequent invention Archimedes' Screw. This lamp evokes surprise inspiration, with light emerging from an unexpected source. The design harkens to Archimedes' wondrous water-related discoveries.
+  image: archimedes.jpg
+- name: Thales
+  made: 1
+  sold: 0
+  price: 250
+  description:
+    Quod est ante pedes nemo spectat, caeli scrutantur plagas. The poet Ennis thus describes the plight of the philosopher -- No one sees what is at their feet, when searching out the regions of the sky. The great pre-Socratic philosopher, Thales, was the butt of many jokes for supposedly falling into a well while gazing up, contemplating the stars. Thales famously held that water was the one fundamental element, with all else merely water in different form. This lamp evokes Thales' grand unification, with water, air, earth, and fire coming together for one cause. The gate-valve releases an apparent stream of water, which flows up through the earthly metals and rises into the air, finally to spark a fire, and perhaps wonder.
+  image: thales-300-min.gif

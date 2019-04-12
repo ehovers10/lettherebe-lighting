@@ -1,0 +1,32 @@
+<div data-role="tabs" id="tabs">
+  <div id="navbar" data-role="navbar">
+    <ul>
+    {% for item in site.data.construct %}
+	    <li><a href="#{{ item.id | append: '-tab' }}" data-ajax="true"{% if forloop.first %} class="ui-btn-active"{% endif %}>{{ item.id | capitalize }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% for sect in site.data.construct %}
+  {% assign nextNum = forloop.index0 | plus: 1 %}
+  {% assign prevNum = forloop.index0 | minus: 1 %}
+  {% assign nextPage = site.data.construct[nextNum].id | append: '-tab' %}
+  {% assign prevPage = site.data.construct[prevNum].id | append: '-tab' %}
+  <div id="{{ sect.id | append: '-tab' }}" class="ui-body-d ui-content">
+    {% include form-section.html %}
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a">
+      {% unless forloop.first %}
+        <a href="#{{ prevPage }}" data-theme="a" class="ui-btn">Previous</a>
+      {% endunless %}
+      </div>
+      <div class="ui-block-b">
+      {% unless forloop.last %}
+        <a href="#{{ nextPage }}" data-theme="b" class="ui-btn nexttab">Next</a>
+      {% else %}
+        <a href="#contact" data-theme="b" class="ui-btn">Next</a>
+      {% endunless %}
+      </div>
+    </fieldset>
+  </div>
+  {% endfor %}
+</div>

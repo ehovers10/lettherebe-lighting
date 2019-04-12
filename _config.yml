@@ -3,13 +3,15 @@ description:
   Philosophy-inspired lamps, built by Erik.
 
 baseurl: ""
-url: "http://erikhoversten.org/lettherebe"
+url: "http://lettherebe.lighting"
 assets: #"/images"
 
 email: ehovers10@gmail.com
 github_username:  ehovers10
 
 markdown: kramdown
+
+status: development
 
 collections:
   models:

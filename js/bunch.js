@@ -1,7 +1,7 @@
 $(document).ready( function() {
 
   $( ".pagenav li.internal a" ).click( function() {
-    var temp = $( this ).attr( "class" );
+    var temp = $( this ).attr( "class" ).split(' ')[0];
     $( this ).closest( "li" ).addClass("active");
     $( this ).closest( "li" ).siblings().removeClass("active");
     $( this ).closest( ".bunch" ).find( ".area" ).each( function() {
